@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-color: bisque;
+    border-radius: 30px;
+}
+
+label{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    border-radius: 50%;
+    left: 0%;
+    transition-duration: 0.2s;
+}
+
+input:checked + label{
+    background-color: green;
+    transform: translateX(100%);
+}
